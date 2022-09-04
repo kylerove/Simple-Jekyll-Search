@@ -89,10 +89,12 @@
 
   function emptyResultsContainer () {
     options.resultsContainer.innerHTML = ''
+    options.resultsContainer.style.dislay = 'none'
   }
 
   function appendToResultsContainer (text) {
     options.resultsContainer.innerHTML += text
+    options.resultsContainer.style.dislay = 'block'
   }
 
   function registerInput () {
